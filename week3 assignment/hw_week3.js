@@ -21,8 +21,6 @@ process.stdin.on('data',function(data){
 	if(answers.length < questions.length){
 		ask(answers.length);
 	}else{
-		// process.exit(); '\n'
-
 		writeFile('week3hw/iknow.txt', "Dear " + answers[0] + "," +'\n\n'+ "I know you. You are a " + answers[1] + "." +'\n'+ "I won't tell anyone about this because we are good friends." +'\n'+ "Hope you have a good day."+'\n\n'+"See you in another life, brother!"+'\n\n\n'+ "Sincerely," +'\n'+ "yourPi", function (err) {
   		if (err) return console.log(err);
   			else {console.log('\n\n $$$ Check your Pi $$$');
